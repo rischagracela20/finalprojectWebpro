@@ -46,9 +46,9 @@ const Provinsi = () => {
           <tr>
             <th>No</th>
             <th>Provinsi</th>
-            <th>Confirmed</th>
+            <th>ActivateCases</th>
             <th>Recovered</th>
-            <th>Death</th>
+            <th>TotalDeath</th>
           </tr>
         </thead>
         <tbody>
