@@ -8,7 +8,7 @@ import {Navbar, Nav} from 'react-bootstrap'
 const App=()=> {
   return (
     <div>
-      <Navbar bg="success" expand="lg">
+      <Navbar bg="danger" expand="lg">
   <Navbar.Brand href=".">Covid Tracker</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
