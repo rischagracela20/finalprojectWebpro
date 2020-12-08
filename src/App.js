@@ -1,25 +1,24 @@
 // import './App.css';
-import {Switch, Route, Link} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import global from './global'
 import indonesia from './Indonesia'
 import provinsi from './Provinsi'
+import {Navbar, Nav} from 'react-bootstrap'
 
 const App=()=> {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/' >Global</Link>
-          </li>
-          <li>
-            <Link to='/indonesia' >Indonesia</Link>
-          </li>
-          <li>
-            <Link to='/provinsi' >Provinsi</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar bg="success" expand="lg">
+  <Navbar.Brand href=".">Covid Tracker</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href=".">Global</Nav.Link>
+      <Nav.Link href="/indonesia">Indonesia</Nav.Link>
+      <Nav.Link href="/provinsi">Provinsi</Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
       <Switch>
         <Route exact path='/' component={global}/>
         <Route path='/indonesia' component={indonesia}/>
